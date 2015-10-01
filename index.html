@@ -7,23 +7,116 @@
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
 
+      <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
     <body>
-            <div class="row green darken-1 z-depth-2 topper">
-                <h4 class="center-align white-text">Ashesi University College</h4>
-                <ul class="tabs green lighten-1">
-                    <li class="tab col s3 white-text"><a href="#attendance" class="white-text waves-effect wave-light">Attendance</a></li>
-                    <li class="tab col s3"><a href="#feedback" class="white-text waves-effect waves-light">Feedback</a></li>
+      <div class="myheader">
+        <nav>
+            <div class="nav-wrapper green">
+                <a href="#" class="brand-logo center">Ashesi University</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
                 </ul>
             </div>
-    <div id="attendance" class="col s12">Attendance comes here</div>
-    <div id="feedback" class="col s12">Feedback comes here</div>
+        </nav>
+            <div class="row">
+                <ul class="tabs green">
+                    <li class="tab col s3 white-text"><a href="#attendance" class="white-text waves-effect waves2-light">Attendance</a></li>
+                    <li class="tab col s3"><a href="#feedback" class="white-text waves-effect waves-light">Feedback</a></li>
+                </ul>
+        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="attendance" class="col s12 card">
+                    <div class="formHeading center-align">
+                        <h4>Fill Attendance Form</h4>
+                    </div>
+                    <form id="signUpForm" class="signUpForm">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="fn" type="text" class="validate">
+                        <label for="fn">Full Name</label>
+                    </div>
+                        <div class="input-field col s12">
+                            <i class="mdi-communication-email prefix"></i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="thephone" type="tel" class="validate">
+                        <label for="thephone">Phone</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">work</i>
+                        <input id="occupation" type="text" class="validate">
+                        <label for="occupation">Occupation</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">store</i>
+                        <input id="workplace" type="text" class="validate">
+                        <label for="workplace">Workplace</label>
+                    </div>
+                    <div class="input-field col s12 beforesubmitBtn">
+                        <i class="material-icons prefix">language</i>
+                        <input id="nationality" type="text" class="validate">
+                        <label for="nationality">Nationality</label>
+                    </div>
+
+                        <div class="submitBtn center-align">
+                            <button class="btn waves-effect waves-light">Submit<i class="material-icons right">send</i></button>
+                        </div>
+                    </form>
+                    </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="feedback" class="col s12 card">
+                    <div class="formHeading center-align">
+                        <h4>Feedback about program</h4>
+                        <form id="feedbackForm">
+                            <div class="input-field col s12">
+                                <textarea id="well" class="materialize-textarea"></textarea>
+                                <label for="well">What went well? (optional)</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <textarea id="notwell" class="materialize-textarea"></textarea>
+                                <label for="notwell">What didn't go well? (optional)</label>
+                            </div>
+                            <div class="input-field col s12 beforesubmitBtn">
+                                <textarea id="better" class="materialize-textarea"></textarea>
+                                <label for="better">How can we do better? <strong class="red-text">*</strong></label>
+                            </div>
+                            <div class="submitBtn center-align">
+                                <button class="btn waves-effect waves-light">Submit<i class="material-icons right">send</i></button>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+            </div>
+        </div>
 
       <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+         <footer class="page-footer green center-align">
+          <div class="footer-copyright">
+            <div class="container">
+            Ashesi University College - Engineering
+            </div>
+          </div>
+        </footer>
+
+        <script>
+            $(document).ready(function(){
+
+            });
+
+        </script>
     </body>
   </html>
