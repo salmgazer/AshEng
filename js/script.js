@@ -19,6 +19,10 @@ $(function () {
 
 
 function signUp(){
+
+   if(!validate()){
+       return;
+   }
    var  email = $("#email").val();
    var thephone = $("#thephone").val();
    var fn = $("#fn").val();
@@ -37,7 +41,7 @@ function signUp(){
         return;
     }
     //better alert
-    window.location.href = "schedule.html";
+    window.location.href = "home.html";
 }
 
 
