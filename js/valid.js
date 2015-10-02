@@ -2,7 +2,7 @@ var check_name = /^[A-Za-z-' ]{4,50}$/;
 var check_email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
 var check_phone =  /^[0-9+]{10,15}$/;
 var check_occupation = /^[A-Za-z ]{4,50}$/;
-var check_workplace = /^[A-Za-z0-9-' ]{4,50}$/;
+var check_workplace = /^[A-Za-z0-9-' ]{2,50}$/;
 //var check_nationality = /^[A-Za-z-' ]{4,50}$/;
 var errors = [];
 
