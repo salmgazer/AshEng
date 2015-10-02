@@ -19,6 +19,10 @@ $(function () {
 
 
 function signUp(){
+
+   if(!validate()){
+       return;
+   }
    var  email = $("#email").val();
    var thephone = $("#thephone").val();
    var fn = $("#fn").val();
