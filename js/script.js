@@ -26,6 +26,7 @@ function signUp(){
    var workplace = $("#workplace").val();
    var nationality = $("#nationality").val();
 
+
     var phone = ""+thephone;
 
     var strUrl = link+"2&fn="+fn+"&email="+email+"&phone="+phone+"&occupation="+occupation+"&workplace="+workplace+"&nationality="+nationality;
