@@ -1,0 +1,10 @@
+.schedule_header {
+    position: fixed;
+    display: block;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1 0 auto;
+}
