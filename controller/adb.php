@@ -5,10 +5,10 @@
  */
 
 define("DB_HOST", 'localhost');
-define("DB_NAME", 'asheng');
+define("DB_NAME", 'csashesi_salifu-mutaru');
 define("DB_PORT", 3306);
-define("DB_USER", "root");
-define("DB_PWORD", "");
+define("DB_USER", "csashesi_sm16");
+define("DB_PWORD", "db!@OIWn");
 
 
 define("LOG_LEVEL_SEC", 0);

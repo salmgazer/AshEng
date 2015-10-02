@@ -37,7 +37,7 @@ function signUp(){
         return;
     }
     //better alert
-    window.location.href = "schedule.html";
+    window.location.href = "home.html";
 }
 
 
