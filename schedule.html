@@ -16,6 +16,7 @@
       <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
+      <script type="text/javascript" src="js/schedule.js"></script>
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -44,7 +45,7 @@
 
         </div>
 
-        <div class="container">
+        <div class="">
 
              <ul class="collection">
 
@@ -82,12 +83,41 @@
                   <a href="#!" class="secondary-content"><i class="material-icons">done</i></a>
                 </li>
 
+
+
+
                 <li class="collection-item avatar">
-                  <img src="img/satcher_robert.jpg" alt="" class="circle">
+                  <img id="profile_pic" src="img/satcher_robert.jpg" href="#modal1" alt="" class="circle">
                   <span class="title">Introduction</span>
                   <p>First Line</p>
-                  <a href="#!" class="secondary-content"><i class="material-icons">play_arrow</i></a>
+                  <a href="#modal1" class="modal-trigger secondary-content"><i class="material-icons">play_arrow</i></a>
                 </li>
+
+
+
+
+                <div class="modal" id="modal1">
+                <div class="modal-content">
+
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="img/satcher_robert.jpg" style="height: 190px">
+                    </div>
+                    <div class="card-content" style="">
+                      <span class="card-title activator grey-text text-darken-4">Satcher Robert Jr<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">Physician</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Bio<i class="material-icons right">close</i></span>
+                      <p>Robert Lee "Bobby" Satcher, Jr. is a physician, chemical engineer, and NASA astronaut. He became the first orthopedic surgeon in space during STS-129. He participated in 2 spacewalks during STS-129, accumulating 12hrs 19min of EVA time</p>
+                    </div>
+                  </div>
+
+                    </div>
+                </div>
+
+
+
 
                 <li class="collection-item avatar">
                   <i class="material-icons circle">folder</i>
