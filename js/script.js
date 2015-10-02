@@ -17,12 +17,6 @@ $(function () {
   });
 });
 
-$(function () {
-  $('#feedbackForm').submit(function(e) {
-    e.preventDefault();
-    feedback();
-  });
-});
 
 function signUp(){
    var  email = $("#email").val();
@@ -35,8 +29,7 @@ function signUp(){
     var phone = ""+thephone;
 
     var strUrl = link+"2&fn="+fn+"&email="+email+"&phone="+phone+"&occupation="+occupation+"&workplace="+workplace+"&nationality="+nationality;
-
-    var objResult = sendRequest(link);
+    var objResult = sendRequest(strUrl);
     if(objResult.result == 0){
         //better alert
         alert("not added");
@@ -46,22 +39,5 @@ function signUp(){
     alert("added");
 }
 
-function feedback(){
-    var well = $("#well").val();
-    var notwell = $("#notwell").val();
-    var better = $("#better").val();
-
-    var strUrl = link+"1&well="+well+"&notwell="+notwell+"&better="+better;
-
-    var objResult = sendRequest(strUrl);
-    if(objResult.result == 0){
-        //do something better
-        alert("feedback not added");
-        return;
-    }
-    //do something better
-    alert("feedback added");
-    return;
-}
 
 
