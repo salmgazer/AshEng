@@ -36,7 +36,7 @@ function signUp(){
 
     var strUrl = link+"2&fn="+fn+"&email="+email+"&phone="+phone+"&occupation="+occupation+"&workplace="+workplace+"&nationality="+nationality;
 
-    var objResult = sendRequest(link);
+    var objResult = sendRequest(strUrl);
     if(objResult.result == 0){
         //better alert
         alert("not added");
