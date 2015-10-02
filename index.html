@@ -9,6 +9,7 @@
 
       <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/valid.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
 
       <!--Let browser know website is optimized for mobile-->
@@ -61,15 +62,10 @@
                         <input id="workplace" type="text" class="validate" autocomplete="off">
                         <label for="workplace">Workplace</label>
                     </div>
-                    <div class="input-field col s12 beforesubmitBtn">
-                        <i class="material-icons prefix">language</i>
-                        <input id="nationality1" type="text" class="validate" autocomplete="off">
-                        <label for="nationality1">Nationality</label>
-                    </div>
                     <div class="input-field col s12">
-                        <select>
-                            <option value="0">Select your country</option>
-                            <option value="AF">Afghanistan</option>
+                        <select id="nationality">
+                                <option value="0">Select your country</option>
+                                <option value="AF">Afghanistan</option>
 	                            <option value="AX">Åland Islands</option>
 	                            <option value="AL">Albania</option>
 	                            <option value="DZ">Algeria</option>
