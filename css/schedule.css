@@ -8,3 +8,21 @@
 main {
     flex: 1 0 auto;
 }
+
+
+i {
+    line-height: inherit; }
+
+i.large {
+    font-size: 6rem; }
+
+.profile {
+    content: url('img/satcher_robert.jpg');
+}
+
+/*
+.collapsible-header {
+     height: 20px;
+    display: block;
+    margin: 0;
+}*/
