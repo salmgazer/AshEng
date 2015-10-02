@@ -25,7 +25,11 @@
   }
 
 .myheader{
-    position: relative;
+    position:fixed;
+    top:0px;
+    margin:0px auto;
+    z-index:100000;
+    width:100%;}
 }
 
 .mycolor{
@@ -41,4 +45,8 @@
     text-align: center;
     margin-bottom: auto;
     margin-top: auto;
+}
+
+.mainBody{
+    margin-top: 120px;
 }
