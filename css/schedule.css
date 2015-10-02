@@ -1,3 +1,9 @@
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
 .schedule_header {
     position: fixed;
     display: block;
@@ -20,9 +26,19 @@ i.large {
     content: url('img/satcher_robert.jpg');
 }
 
-/*
-.collapsible-header {
-     height: 20px;
-    display: block;
-    margin: 0;
-}*/
+
+
+    #popup_box
+    {
+
+    position:absolute;
+        top: 15%;
+        left: 15%;
+        width: 70%;
+        height: 70%;
+        margin-top: 5pm; /*set to a negative number 1/2 of your height*/
+        margin-left: 5pm; /*set to a negative number 1/2 of your width*/
+        border: none;
+        z-index:100;
+
+    }
