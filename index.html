@@ -17,26 +17,23 @@
 
     <body>
       <div class="myheader">
-        <nav>
+        <nav class="mynav">
             <div class="nav-wrapper mycolor" >
-                <a href="#" class="brand-logo center">Ashesi University</a>
+                <a href="#" class="brand-logo center">Ashesi University College</a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                 </ul>
             </div>
         </nav>
-            <div class="row">
-                <ul class="tabs white">
-                    <li class="tab col s3"><a href="#attendance" class="red-text text-darken-2 waves-effect waves2-light">Attendance</a></li>
-                    <li class="tab col s3"><a href="#feedback" class="red-text text-darken-2 waves-effect waves-light">Feedback</a></li>
-                </ul>
         </div>
-        </div>
+
+        <!-- area for sign up form -->
         <div class="container">
             <div class="row">
                 <div id="attendance" class="col s12 card">
                     <div class="formHeading center-align">
-                        <h4>Fill Attendance Form</h4>
+                        <h4 class="text-lighten-2">Fill Attendance Form</h4>
                     </div>
+                    <!-- Sign up form-->
                     <form id="signUpForm" class="signUpForm">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">account_circle</i>
@@ -73,38 +70,13 @@
                             <button class="btn waves-effect waves-light">Submit<i class="material-icons right">send</i></button>
                         </div>
                     </form>
+                    <!-- End sign up form -->
                     </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div id="feedback" class="col s12 card">
-                    <div class="formHeading center-align">
-                        <h4>Feedback about program</h4>
-                        <form id="feedbackForm">
-                            <div class="input-field col s12">
-                                <textarea id="well" class="materialize-textarea"></textarea>
-                                <label for="well">What went well? (optional)</label>
-                            </div>
-                            <div class="input-field col s12">
-                                <textarea id="notwell" class="materialize-textarea"></textarea>
-                                <label for="notwell">What didn't go well? (optional)</label>
-                            </div>
-                            <div class="input-field col s12 beforesubmitBtn">
-                                <textarea id="better" class="materialize-textarea"></textarea>
-                                <label for="better">How can we do better? <strong class="red-text">*</strong></label>
-                            </div>
-                            <div class="submitBtn center-align">
-                                <button class="btn waves-effect waves-light">Submit<i class="material-icons right">send</i></button>
-                            </div>
-                        </form>
-                    </div>
-            </div>
             </div>
         </div>
 
       <!--Import jQuery before materialize.js-->
-         <footer class="page-footer green center-align">
+         <footer class="page-footer mycolor center-align">
           <div class="footer-copyright">
             <div class="container">
             Ashesi University College - Engineering
