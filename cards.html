@@ -10,9 +10,14 @@
       <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="animatedModal/animatedModal.min.js"></script>
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- full screen modal -->
+      <link rel="stylesheet" href="animatedModal/animate.css">    
     </head>
 
     <body>
@@ -84,7 +89,7 @@
               <img src="img/pic.jpg">
             </div>
             <div class="card-action">
-              <a href="#">Robotics Lab</a>
+              <a href="#">Robotics Lab<i class="material-icons right">more_vert</i></a>
             </div>
           </div>
         </div>
@@ -94,13 +99,25 @@
               <img src="img/pic.jpg">
             </div>
             <div class="card-action">
-              <a href="#">Design Lab</a>
+              <a id="demo01" href="#animatedModal">Design Lab<i class="material-icons right">more_vert</i></a>
             </div>
           </div>
         </div>
                 
                 
             </div>
+
+    <!--DEMO01-->
+    <div id="animatedModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-animatedModal"> 
+            <i class="large material-icons">done</i>
+        </div>
+            
+        <div class="modal-content" style="backgroung-color:white;">
+                 lkl
+        </div>
+    </div>
                             
         </div>
 
@@ -117,7 +134,7 @@
             $(document).ready(function(){
 
             });
-
+            $("#demo01").animatedModal();
         </script>
     </body>
   </html>
