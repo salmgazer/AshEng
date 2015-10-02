@@ -27,13 +27,13 @@ i.large {
 }
 
 
- #hider
+ #robert_satcher_hider
     {
         position:absolute;
         top: 0%;
         left: 0%;
-        width:1600px;
-        height:2000px;
+        width: 1600px;
+        height: 2000px;
         margin-top: -800px; /*set to a negative number 1/2 of your height*/
         margin-left: -500px; /*set to a negative number 1/2 of your width*/
         /*
@@ -43,11 +43,13 @@ i.large {
        background-color:Black;
 /*       for transparency*/
        opacity:0.6;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
-    #popup_box
-    {
 
+#robert_satcher_popupbox
+    {
     position:absolute;
         top: 10%;
         left: 15%;
@@ -57,5 +59,111 @@ i.large {
         margin-left: 5px; /*set to a negative number 1/2 of your width*/
         border: none;
         z-index: 100;
-
     }
+
+
+ #patrick_awuah_hider
+    {
+        position:absolute;
+        top: 0%;
+        left: 0%;
+        width: 1600px;
+        height: 2000px;
+        margin-top: -800px; /*set to a negative number 1/2 of your height*/
+        margin-left: -500px; /*set to a negative number 1/2 of your width*/
+        /*
+        z- index must be lower than pop up box
+       */
+        z-index: 99;
+       background-color:Black;
+/*       for transparency*/
+       opacity:0.6;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+
+#patrick_awuah_popupbox
+    {
+    position:absolute;
+        top: 10%;
+        left: 15%;
+        width: 70%;
+        height: 70%;
+        margin-top: 5px; /*set to a negative number 1/2 of your height*/
+        margin-left: 5px; /*set to a negative number 1/2 of your width*/
+        border: none;
+        z-index: 100;
+    }
+
+
+ #amissah_arthur_hider
+    {
+        position:absolute;
+        top: 0%;
+        left: 0%;
+        width: 1600px;
+        height: 2000px;
+        margin-top: -800px; /*set to a negative number 1/2 of your height*/
+        margin-left: -500px; /*set to a negative number 1/2 of your width*/
+        /*
+        z- index must be lower than pop up box
+       */
+        z-index: 99;
+       background-color:Black;
+/*       for transparency*/
+       opacity:0.6;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+
+#amissah_arthur_popupbox
+    {
+    position:absolute;
+        top: 10%;
+        left: 15%;
+        width: 70%;
+        height: 70%;
+        margin-top: 5px; /*set to a negative number 1/2 of your height*/
+        margin-left: 5px; /*set to a negative number 1/2 of your width*/
+        border: none;
+        z-index: 100;
+    }
+
+
+ #mills_robertson_hider
+    {
+        position:absolute;
+        top: 0%;
+        left: 0%;
+        width: 1600px;
+        height: 2000px;
+        margin-top: -800px; /*set to a negative number 1/2 of your height*/
+        margin-left: -500px; /*set to a negative number 1/2 of your width*/
+        /*
+        z- index must be lower than pop up box
+       */
+        z-index: 99;
+       background-color:Black;
+/*       for transparency*/
+       opacity:0.6;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+
+#mills_robertson_popupbox
+    {
+    position:absolute;
+        top: 10%;
+        left: 15%;
+        width: 70%;
+        height: 70%;
+        margin-top: 5px; /*set to a negative number 1/2 of your height*/
+        margin-left: 5px; /*set to a negative number 1/2 of your width*/
+        border: none;
+        z-index: 100;
+    }
+
+
