@@ -8,30 +8,30 @@ var errors = [];
 
 function validate(){
 var nationality = document.getElementById('nationality').options[document.getElementById('nationality').selectedIndex].text;
-if(nationality == "Select your country"){
-    alert("Please select your country");
-    return;
-}
+
 var name = document.getElementById('fn').value;
 var email = document.getElementById('email').value;
 var phone = document.getElementById('thephone').value;
 var occupation = document.getElementById('occupation').value;
 var workplace = document.getElementById('workplace').value;
+if(nationality == "Select your country"){
+    errors[errors.length] = "Please select your country";
+}
 
  if (!check_name.test(name)) {
-  errors[errors.length] = "You valid Name .";
+  errors[errors.length] = "Enter valid name .";
  }
  if (!check_email.test(email)) {
-  errors[errors.length] = "You must enter a valid email address.";
+  errors[errors.length] = "Enter valid email.";
  }
  if (!check_occupation.test(occupation)) {
-  errors[errors.length] = "You must enter your occupation";
+  errors[errors.length] = "Enter your occupation";
  }
  if (!check_phone.test(phone)) {
-  errors[errors.length] = "You must enter a valid phone ";
+  errors[errors.length] = "Enter valid phone number";
  }
  if (!check_workplace.test(workplace)) {
-  errors[errors.length] = "You must enter a valid workplace ";
+  errors[errors.length] = "Enter valid workplace ";
  }
  /*if (!check_nationality.test(nationality)) {
   errors[errors.length] = "You must enter a valid country ";
@@ -45,11 +45,12 @@ var workplace = document.getElementById('workplace').value;
   return true;
 }
 function reportErrors(errors){
- var msg = "Please Enter Valid Data...\n";
- for (var i = 0; i<errors.length; i++) {
+ //var msg = "Please Enter Valid Data...\n";
+ var msg = ""
+; for (var i = 0; i<errors.length; i++) {
  var numError = i + 1;
-  msg += "\n" + numError + ". " + errors[i];
+ msg += '<div class="chip red white-text mychip">'+errors[i]+'<i class="material-icons white-text">close</i></div>';
 }
 console.log(errors);
- alert(msg);
+document.getElementById("myerrors").innerHTML = msg;
 }
