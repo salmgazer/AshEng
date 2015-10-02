@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" id = "com.fredrickabayie.ntf" versioncode = "11" version = "1.6.0">
+    <name>AshEng</name>
+    <description>
+        An application for the launching of Ashesi University College's new Engineering building.
+    </description>
+    <author href="http://www.ashesi.edu.gh" email="fredrick.abayie@ashesi.edu.gh">
+        Ashesi University College
+    </author>
+</widget>
