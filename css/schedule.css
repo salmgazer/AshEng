@@ -27,6 +27,23 @@ i.large {
 }
 
 
+ #hider
+    {
+        position:absolute;
+        top: 0%;
+        left: 0%;
+        width:1600px;
+        height:2000px;
+        margin-top: -800px; /*set to a negative number 1/2 of your height*/
+        margin-left: -500px; /*set to a negative number 1/2 of your width*/
+        /*
+        z- index must be lower than pop up box
+       */
+        z-index: 99;
+       background-color:Black;
+/*       for transparency*/
+       opacity:0.6;
+    }
 
     #popup_box
     {
@@ -39,6 +56,6 @@ i.large {
         margin-top: 5px; /*set to a negative number 1/2 of your height*/
         margin-left: 5px; /*set to a negative number 1/2 of your width*/
         border: none;
-        z-index: 50;
+        z-index: 100;
 
     }
