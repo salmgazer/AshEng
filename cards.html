@@ -1,0 +1,141 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
+
+      <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="animatedModal/animatedModal.min.js"></script>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <!-- full screen modal -->
+      <link rel="stylesheet" href="animatedModal/animate.css">
+    </head>
+
+    <body>
+      <div class="myheader">
+        <nav class="mynav">
+            <div class="nav-wrapper mycolor" >
+                <a href="#" class="brand-logo center">Ashesi University College</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                </ul>
+            </div>
+        </nav>
+        </div>
+
+        <!-- area for sign up form -->
+        <div class="container">
+            <div class="row">
+                <div id="attendance" class="col s12 card">
+                    <div class="formHeading center-align">
+                        <h4 class="text-lighten-2">Fill Attendance Form</h4>
+                    </div>
+                    <!-- Sign up form-->
+                    <form id="signUpForm" class="signUpForm">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="fn" type="text" class="validate">
+                        <label for="fn">Full Name</label>
+                    </div>
+                        <div class="input-field col s12">
+                            <i class="mdi-communication-email prefix"></i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="thephone" type="tel" class="validate">
+                        <label for="thephone">Phone</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">work</i>
+                        <input id="occupation" type="text" class="validate">
+                        <label for="occupation">Occupation</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">store</i>
+                        <input id="workplace" type="text" class="validate">
+                        <label for="workplace">Workplace</label>
+                    </div>
+                    <div class="input-field col s12 beforesubmitBtn">
+                        <i class="material-icons prefix">language</i>
+                        <input id="nationality" type="text" class="validate">
+                        <label for="nationality">Nationality</label>
+                    </div>
+
+                        <div class="submitBtn center-align">
+                            <button class="btn waves-effect waves-light">Submit<i class="material-icons right">send</i></button>
+                        </div>
+                    </form>
+                    <!-- End sign up form -->
+                    </div>
+            </div>
+        </div>
+<<<<<<< HEAD:index.html
+=======
+        <div class="container">
+            <div class="row">
+                <div class="col s6 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/pic.jpg">
+            </div>
+            <div class="card-action">
+              <a href="#">Robotics Lab<i class="material-icons right">more_vert</i></a>
+            </div>
+          </div>
+        </div>
+                <div class="col s6 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/pic.jpg">
+            </div>
+            <div class="card-action">
+              <a id="demo01" href="#animatedModal">Design Lab<i class="material-icons right">more_vert</i></a>
+            </div>
+          </div>
+        </div>
+
+
+            </div>
+
+    <!--DEMO01-->
+    <div id="animatedModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-animatedModal">
+            <center><h2>Close</h2></center>
+        </div>
+
+        <div class="modal-content" style="backgroung-color:white;">
+                 lkl
+        </div>
+    </div>
+
+        </div>
+>>>>>>> origin/ali:cards.html
+
+      <!--Import jQuery before materialize.js-->
+         <footer class="page-footer mycolor center-align">
+          <div class="footer-copyright">
+            <div class="container">
+            Ashesi University College - Engineering
+            </div>
+          </div>
+        </footer>
+
+        <script>
+            $(document).ready(function(){
+
+            });
+            $("#demo01").animatedModal();
+        </script>
+    </body>
+  </html>
