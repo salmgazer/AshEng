@@ -30,41 +30,50 @@
       <div class="navbar">
 
         <nav>
-            <div class="nav-wrapper mycolor" >
-                <a href="#" class="brand-logo center">Ashesi University</a>
+            <div class="nav-wrapper white center-align" >
+                <img class="brand-logo mylogo" src="img/logo.png">
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                 </ul>
             </div>
         </nav>
 
-            <div class="row">
-                <ul class="tabs white">
-                    <li class="tab col s3"><a href="#tour" class="red-text text-darken-2 waves-effect waves-light">Engineering Labs</a></li>
+            <div class="row center-align">
+                <ul class="tabs" style="background-color: #b83838;">
+                    <li class="tab col s3"><a href="#tour" class="white-text text-darken-2 waves-effect waves-light">Engineering Labs</a></li>
                 </ul>
             </div>
 
         </div>
 
-        <div>
 
-
-        <div class="" id="tour">
+        <div id="tour">
 
             <div class="container">
 <!--                 <div class="row">-->
 
-                <div class="col s12 m7" id="scan_ui" style="text-align: center;">
-                     <img src="">
+                <div class="col s12 m7 scan_ui" id="scan_ui">
                      <div class="row">
-                         <form class="col s12">
-                             <div class="input-field col s12">
-                                 <input disabled value="barcode result" id="barcode_result" type="text" class="validate">
-<!--                                 <label for="barcode_result">Barcode Text</label>-->
-                             </div>
-                         </form>
+
+                        <div class="row center-align">
+                        <strong class="mycolortext boldtext">Scan</strong> QR codes around Engineering Block to learn <strong class="mycolortext boldtext"><i>more!</i></strong>.
+                    </div>
+
+
                      </div>
-                      <a class="waves-effect waves-light btn-large scan_btn" id="scan_btn" style="width: 70%">scan</a>
+
                 </div>
+                <div class="col s12 m7 scan_help" id="">
+                    <div class="row center-align">
+                        <img class="qr_gif" src="img/QR-code.gif">
+                    </div>
+
+                </div>
+                <div class="center-align">
+                      <a class="btn waves-effect waves-light scan_btn" id="scan_btn">scan</a>
+                </div>
+            </div>
+
+
 
 
 
