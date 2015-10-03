@@ -117,6 +117,11 @@ $(function () {
                     $("#design_barcode").show("fast");
                 }
 
+                if (response == 'norton_barcode') {
+                    $("#scan_ui").hide("fast");
+                    $("#design_barcode").show("fast");
+                }
+
             },
             function (error) {
                 alert("Scanning failed: " + error);
