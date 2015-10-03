@@ -6,7 +6,6 @@
 $(function () {
     "use strict";
     $(".scan_btn").click(function () {
-        alert("Scan button pressed");
         cordova.plugins.barcodeScanner.scan(
             function (result) {
 
@@ -59,7 +58,6 @@ $(function () {
     });
 
     $(".back").click(function(){
-        alert("back pressed");
         $("#electronics_barcode").hide("fast");
         $("#mechanical_barcode").hide("fast");
         $("#science_barcode").hide("fast");
