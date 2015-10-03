@@ -12,6 +12,7 @@ $(function () {
                 $("#barcode_result").val(result.text);
 
                 $("#electronics_barcode").hide("fast");
+                   $("#scan_ui").hide("fast");
                     $("#mechanical_barcode").hide("fast");
                     $("#science_barcode").hide("fast");
                     $("#design_barcode").hide("fast");
@@ -22,7 +23,7 @@ $(function () {
                     $("#scan_ui").hide("fast");
                     $("#design_barcode").hide("fast");
                     $("#science_barcode").hide("fast");
-                    $("#mechanical_barcode").show("fast");
+                    $("#mechanical_barcode").hide("fast");
                     $("#electronics_barcode").show("fast");
                 }
 
