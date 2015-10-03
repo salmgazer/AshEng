@@ -1,5 +1,6 @@
 .mylogo{
-    height: 100px;
+    height: 30px;
+    margin-top: 10px;
 }
 
 .formHeading{
@@ -36,6 +37,9 @@
     background-color: #b83838;
 }
 
+.mycolortext{
+    color: #b83838;
+}
 .mynav{
 }
 
@@ -51,7 +55,9 @@
 }
 
 nav{
-    background-color: #b83838;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #b83838;
 }
 
 footer{
@@ -61,4 +67,56 @@ footer{
 .mychip{
     margin-bottom: 5px;
     margin-right: 3px;
+}
+
+.myheading{
+    font-size: 14px;
+}
+
+.scan_btn{
+    background-color: #b83838;
+    border-radius: 0px;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.scan_btn:hover{
+    background: #BF4C4C;
+}
+
+.scan_ui{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.qr_gif{
+    width: 40%;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+
+.boldtext{
+    font-size: 18px;
+}
+
+/* ----------- Galaxy Tab 10.1 ----------- */
+
+@media (max-width: 800px) {
+    .qr_gif{
+        width: 70%;
+        border-radius: 100px;
+        margin-bottom: 30px;
+        }
+}
+
+/* ----------- Galaxy S5 ----------- */
+
+/* Portrait and Landscape */
+@media (max-width: 380px) {
+   .qr_gif{
+    width: 70%;
+    border-radius: 100px;
+    margin-bottom: 30px;
+   }
 }
