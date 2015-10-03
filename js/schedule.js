@@ -84,3 +84,35 @@
         //on click hide the message and the
 
         });
+
+
+
+
+
+
+
+//For barcode scanning
+$(function () {
+    "use strict";
+    $("#scan_btn").click(function () {
+        alert('scan clicked');
+        cordova.plugins.barcodeScanner.scan(
+            function (result) {
+                $("#barcode_result").val(result.text);
+//                    "Format: " + result.format + "\n" +
+            },
+            function (error) {
+                alert("Scanning failed: " + error);
+            }
+        );
+    });
+});
+
+
+
+
+
+
+
+
+
