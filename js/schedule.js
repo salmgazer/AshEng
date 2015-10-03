@@ -99,8 +99,24 @@ $(function () {
         cordova.plugins.barcodeScanner.scan(
             function (result) {
                 $("#barcode_result").val(result.text);
-                $("#scan_ui").hide("fast");
-                $("#skip_barcode").show("fast");
+
+                var response = result.text;
+
+                if (response == 'skip_barcode') {
+                    $("#scan_ui").hide("fast");
+                    $("#skip_barcode").show("fast");
+                }
+
+                if (response == 'design_barcode') {
+                    $("#scan_ui").hide("fast");
+                    $("#design_barcode").show("fast");
+                }
+
+                if (response == 'databank_barcode') {
+                    $("#scan_ui").hide("fast");
+                    $("#design_barcode").show("fast");
+                }
+
             },
             function (error) {
                 alert("Scanning failed: " + error);
