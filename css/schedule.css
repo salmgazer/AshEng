@@ -40,7 +40,7 @@ i.large {
         z- index must be lower than pop up box
        */
         z-index: 99;
-       background-color:Black;
+       background-color: lightgray;
 /*       for transparency*/
        opacity:0.6;
         overflow-y: hidden;
@@ -75,7 +75,7 @@ i.large {
         z- index must be lower than pop up box
        */
         z-index: 99;
-       background-color:Black;
+       background-color: lightgray;
 /*       for transparency*/
        opacity:0.6;
         overflow-y: hidden;
@@ -110,7 +110,7 @@ i.large {
         z- index must be lower than pop up box
        */
         z-index: 99;
-       background-color:Black;
+       background-color: lightgray;
 /*       for transparency*/
        opacity:0.6;
         overflow-y: hidden;
@@ -145,7 +145,7 @@ i.large {
         z- index must be lower than pop up box
        */
         z-index: 99;
-       background-color:Black;
+       background-color: lightgray;
 /*       for transparency*/
        opacity:0.6;
         overflow-y: hidden;

@@ -1,4 +1,4 @@
-var link = "controller/asheng.php?cmd=";
+var link = "http://cs.ashesi.edu.gh/class2016/salifu-mutaru/IWasHere/controller/asheng.php?cmd=";
 
 function sendRequest(u) {
     // Send request to server

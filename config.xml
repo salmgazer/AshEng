@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" id = "com.fredrickabayie.ntf" versioncode = "11" version = "1.6.0">
-    <name>AshEng</name>
+<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" id = "com.ashesi.asheng" versioncode = "11" version = "1.1.0">
+    <name>AshEngine</name>
     <description>
-        An application for the launching of Ashesi University College's new Engineering building.
+        An application for the launch of Ashesi's Engineering Block
     </description>
     <author href="http://www.ashesi.edu.gh" email="fredrick.abayie@ashesi.edu.gh">
-        Ashesi University College
+        Fredrick Abayie
     </author>
+    <gap:plugin name="net.roughshod.plugins.barcodescanner" version="3.0.0" />
 </widget>
