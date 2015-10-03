@@ -95,7 +95,6 @@
 $(function () {
     "use strict";
     $("#scan_btn").click(function () {
-        alert('scan clicked');
         cordova.plugins.barcodeScanner.scan(
             function (result) {
                 $("#barcode_result").val(result.text);
