@@ -12,7 +12,7 @@ $(function () {
                 $("#barcode_result").val(result.text);
 
                 $("#electronics_barcode").hide("fast");
-                   $("#scan_ui").hide("fast");
+                   $(".scan_ui").hide("fast");
                     $("#mechanical_barcode").hide("fast");
                     $("#science_barcode").hide("fast");
                     $("#design_barcode").hide("fast");
@@ -20,7 +20,7 @@ $(function () {
                 var response = result.text;
 
                 if (response == 'electronics_barcode') {
-                    $("#scan_ui").hide("fast");
+                    $(".scan_ui").hide("fast");
                     $("#design_barcode").hide("fast");
                     $("#science_barcode").hide("fast");
                     $("#mechanical_barcode").hide("fast");
@@ -28,7 +28,7 @@ $(function () {
                 }
 
                 if (response == 'mechanical_barcode') {
-                    $("#scan_ui").hide("fast");
+                    $(".scan_ui").hide("fast");
                     $("#electronics_barcode").hide("fast");
                     $("#design_barcode").hide("fast");
                     $("#science_barcode").hide("fast");
@@ -36,7 +36,7 @@ $(function () {
                 }
 
                 if (response == 'science_barcode') {
-                    $("#scan_ui").hide("fast");
+                    $(".scan_ui").hide("fast");
                     $("#electronics_barcode").hide("fast");
                     $("#mechanical_barcode").hide("fast");
                     $("#design_barcode").hide("fast");
@@ -44,7 +44,7 @@ $(function () {
                 }
 
                 if (response == 'design_barcode') {
-                    $("#scan_ui").hide("fast");
+                    $(".scan_ui").hide("fast");
                      $("#electronics_barcode").hide("fast");
                     $("#mechanical_barcode").hide("fast");
                     $("#science_barcode").hide("fast");
@@ -63,7 +63,7 @@ $(function () {
         $("#mechanical_barcode").hide("fast");
         $("#science_barcode").hide("fast");
         $("#design_barcode").hide("fast");
-        $("#scan_ui").show("fast");
+        $(".scan_ui").show("fast");
     });
 });
 
