@@ -1,36 +1,51 @@
-  <!DOCTYPE html>
-  <html>
+<!DOCTYPE html>
+<html>
+
     <head>
-      <!--Import Google Icon Font-->
+
+<!--       The title of the document-->
+        <title>Schedule Lineup</title>
+
+<!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/schedule.css" media="screen,projection"/>
 
       <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/valid.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
+      <script type="text/javascript" src="js/schedule.js"></script>
+      <script type="text/javascript" src="cordova.js"></script>
 
       <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
     </head>
 
+
     <body>
+<<<<<<< HEAD
       <div class="myheader" id="topper">
         <nav class="mynav white">
             <div class="nav-wrapper white" >
                 <a href="#" class="brand-logo center black-text">Ashesi University College</a>
+=======
+
+      <div class="navbar">
+
+        <nav>
+            <div class="nav-wrapper mycolor" >
+                <a href="#" class="brand-logo center">Ashesi University</a>
+>>>>>>> origin/fredrickBranch
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                 </ul>
             </div>
         </nav>
-        </div>
 
-        <div class="mainBody">
-        <!-- area for sign up form -->
-        <div class="container">
             <div class="row">
+<<<<<<< HEAD
                 <div id="attendance" class="col s12 card">
                     <div class="formHeading center-align">
                         <h4 class="text-lighten-2">Fill Attendance Form</h4>
@@ -77,24 +92,294 @@
                     </form>
                     <!-- End sign up form -->
                     </div>
+=======
+                <ul class="tabs white">
+                    <li class="tab col s3"><a href="#schedule" class="red-text text-darken-2 waves-effect waves2-light">Schedule</a></li>
+                    <li class="tab col s3"><a href="#tour" class="red-text text-darken-2 waves-effect waves-light">tour</a></li>
+                </ul>
+>>>>>>> origin/fredrickBranch
             </div>
-        </div>
+
         </div>
 
+<<<<<<< HEAD
       <!--Import jQuery before materialize.js-->
          <footer class="page-footer black center-align">
           <div class="footer-copyright">
-            <div class="container">
-            Ashesi University College - Engineering
+=======
+        <div>
+        <div class="" id="schedule">
+
+
+
+                  <ul class="collapsible popout" data-collapsible="accordion" style="margin: -5px;">
+
+
+<!--                   Robert Satcher profile header-->
+                    <li>
+                      <div class="collapsible-header"><img id="robert_satcher_pic" src="img/satcher_robert.jpg" href="#modal1" alt="" class="circle" style="width: 50px; height: 50px; margin-top: 9px;">Introduction<a class="secondary-content"><i class="material-icons">done</i></a></div>
+
+
+                      <div class="collapsible-body">
+                      <table><tr><td>Time</td><td>12:30 - 1:30pm</td></tr></table>
+                      </div>
+                    </li>
+
+
+<!--                    Patrict Awuah profile header-->
+                    <li>
+                      <div class="collapsible-header"><img id="patrick_awuah_pic" src="img/patrick_awuah.jpg" href="#modal1" alt="" class="circle" style="width: 50px; height: 50px; margin-top: 9px; margin-down: -40px">Introduction<a class="secondary-content"><i class="material-icons">done</i></a></div>
+
+
+                      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet....Lorem ipsum dolor sit amet....</p></div>
+                    </li>
+
+
+<!--                    Kwesi Arthur profile header-->
+                    <li>
+                      <div class="collapsible-header"><img id="amissah_arthur_pic" src="img/amissah_arthur.jpg" href="#modal1" alt="" class="circle" style="width: 50px; height: 50px; margin-top: 9px; margin-down: -40px">Introduction<a class="secondary-content"><i class="material-icons">play_arrow</i></a></div>
+
+
+                      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet....Lorem ipsum dolor sit amet....</p></div>
+                    </li>
+
+
+
+<!--                        Mills Robertson profile header-->
+                    <li>
+                      <div class="collapsible-header"><img id="mills_robertson_pic" src="img/mills_robertson3.jpg" href="#modal1" alt="" class="circle" style="width: 50px; height: 50px; margin-top: 9px; margin-down: -40px">Spoken Word<a class="secondary-content"><i class="material-icons"></i></a></div>
+
+
+                      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet....Lorem ipsum dolor sit amet....</p></div>
+                    </li>
+
+
+
+<!--Bio for Robert Satcher-->
+<div id="robert_satcher_hider" class="hider"></div>
+<div id="robert_satcher_popupbox" class="popupbox">
+    <div class="card">
+            <div class="card-image">
+              <img src="img/satcher_robert.jpg" style="height: 200px">
+<!--              <span class="card-title">Satcher Robert Jr</span>-->
+            </div>
+            <div class="card-content" style="margin: -20px -10px">
+                <a style="font-size: 20px"><b>Satcher Robert Jr</b><br><a>Physician</a></a>
+              <p>Robert Lee "Bobby" Satcher, Jr. is a physician, chemical engineer, and NASA astronaut. He became the first orthopedic surgeon in space during STS-129. He participated in 2 spacewalks during STS-129, accumulating 12hrs 19min of EVA time.</p>
+            </div>
+            <div class="card-action" style="margin: -10px">
+                <a id="robert_satcher_close" style="">Close</a>
             </div>
           </div>
-        </footer>
+</div>
 
-        <script>
-            $(document).ready(function(){
-                $('select').material_select();
-            });
 
-        </script>
+<!--Bio for Patrick Awuah-->
+<div id="patrick_awuah_hider" class="hider"></div>
+<div id="patrick_awuah_popupbox" class="popupbox">
+    <div class="card">
+            <div class="card-image">
+              <img src="img/patrick_awuah.jpg" style="height: 200px">
+<!--              <span class="card-title">Satcher Robert Jr</span>-->
+            </div>
+            <div class="card-content" style="margin: -20px -10px">
+                <a style="font-size: 20px"><b>Patrick G. Awuah Jr</b><br><a>Founder & President, Ashesi</a></a>
+              <p>Patrick Awuah is the founder and president of Ashesi University, a private, not-for-profit institution that has quickly gained a reputation for innovation and quality education in Ghana.</p>
+            </div>
+            <div class="card-action" style="margin: -10px">
+                <a id="patrick_awuah_close" style="">Close</a>
+            </div>
+          </div>
+</div>
+
+
+<!--Bio for Amissah Arthur-->
+<div id="amissah_arthur_hider" class="hider"></div>
+<div id="amissah_arthur_popupbox" class="popupbox">
+    <div class="card">
+            <div class="card-image">
+              <img src="img/amissah_arthur.jpg" style="height: 200px">
+<!--              <span class="card-title">Satcher Robert Jr</span>-->
+            </div>
+            <div class="card-content" style="margin: -20px -10px">
+                <a style="font-size: 20px"><b>Kwesi Amissah-Arthur</b><br><a>Vice President of Ghana</a></a>
+              <p>Kwesi Bekoe Amissah-Arthur is the Vice President of the Republic of Ghana. He has also been governor of the Bank of Ghana. He is a Ghanaian economist, academician and politician.</p>
+            </div>
+            <div class="card-action" style="margin: -10px">
+                <a id="amissah_arthur_close" style="">Close</a>
+            </div>
+          </div>
+</div>
+
+
+<!--Bio for Mills Robertson-->
+<div id="mills_robertson_hider" class="hider"></div>
+<div id="mills_robertson_popupbox" class="popupbox">
+    <div class="card">
+            <div class="card-image">
+              <img src="img/mills_robertson3.jpg" style="height: 200px">
+<!--              <span class="card-title">Satcher Robert Jr</span>-->
+            </div>
+            <div class="card-content" style="margin: -20px -10px">
+                <a style="font-size: 20px"><b>Ahomka Mills Robertson</b><br><a>Student</a></a>
+              <p>Ahomka Mills-Robertson is a 4th year Ashesi University student. A Business Adnininstration major, he has been performing Spoken word for 6 years.</p>
+            </div>
+            <div class="card-action" style="margin: -10px">
+                <a id="mills_robertson_close" style="">Close</a>
+            </div>
+          </div>
+</div>
+
+
+            </ul>
+            </div>
+
+
+
+
+        <div class="" id="tour">
+>>>>>>> origin/fredrickBranch
+            <div class="container">
+<!--                 <div class="row">-->
+
+                <div class="col s12 m7" id="scan_ui" style="text-align: center;">
+                     <img src="">
+                     <div class="row">
+                         <form class="col s12">
+                             <div class="input-field col s12">
+                                 <input disabled value="barcode result" id="barcode_result" type="text" class="validate">
+<!--                                 <label for="barcode_result">Barcode Text</label>-->
+                             </div>
+                         </form>
+                     </div>
+                      <a class="waves-effect waves-light btn-large" id="scan_btn"><i class="material-icons left">cloud</i>scan</a>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="col s12 m7" id="skip_barcode" style="display: none">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/pic.jpg">
+                <span class="card-title" style="color: black; font-size: 22px;"></span>
+                <span><img id="patrick_awuah_pic" src="img/skip_ellis.jpg" href="#modal1" alt="" class="circle" style="width: 21%; height: 30%; max-height: 120px; bottom: 0; left: 0; margin: 48% 0% 0% 70%; display: block; color: #fff; position: absolute"></span>
+            </div>
+            <div class="card-content">
+
+                <p>
+                <a style="font-size: 20px">Prof Skip Ellis Clarence</a>
+                </p>
+              <p>
+              Was the first African-American to receive a Ph.D. in Computer Science. Dr. Skip Ellis worked as a researcher and developer at Bell Telephone Laboratories, IBM and Xerox amongst others with special interests in groupware, coordination theory, object oriented systems, CSCW, office systems, databases, distributed systems, software engineering, world-wide-web (internetworking), systems design and modeling, workflow systems, and humane interfaces to computers.
+              </p><br>
+
+              <p>About</p>
+              <p>
+                  I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.
+              </p>
+
+            </div>
+
+            <div class="card-action">
+              <a href="#">Close</a>
+              <a href="#">Scan</a>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+<!--    --------------------------------------------------------------------->
+
+    <div class="col s12 m7" id="databank_barcode" style="display: none">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/pic.jpg">
+                <span class="card-title" style="color: black; font-size: 22px;"></span>
+                <span><img id="patrick_awuah_pic" src="img/skip_ellis.jpg" href="#modal1" alt="" class="circle" style="width: 21%; height: 30%; max-height: 120px; bottom: 0; left: 0; margin: 48% 0% 0% 70%; display: block; color: #fff; position: absolute"></span>
+            </div>
+            <div class="card-content">
+
+                <p>
+                <a style="font-size: 20px">Databank Foundation</a>
+                </p>
+              <p>
+              Was created by Databank Group as an intentional way to actively engage in Corporate Social Responsibility. The Foundation works to promote leadership development, mental health for the vulnerable, and education. Its current programs include the African Leadership Initiative, West Africa (ALIWA); the Young Leaders Mentorship Program (YLMP).
+              </p><br>
+
+              <p>About</p>
+              <p>
+                  I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.
+              </p>
+
+            </div>
+
+            <div class="card-action">
+              <a href="#">Close</a>
+              <a href="#">Scan</a>
+            </div>
+
+          </div>
+        </div>
+<!--------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+        <div class="col s12 m7" id="design_barcode" style="display: none">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/pic.jpg">
+                <span class="card-title" style="color: black; font-size: 22px;"></span>
+                <span><img id="patrick_awuah_pic" src="img/skip_ellis.jpg" href="#modal1" alt="" class="circle" style="width: 21%; height: 30%; max-height: 120px; bottom: 0; left: 0; margin: 48% 0% 0% 70%; display: block; color: #fff; position: absolute"></span>
+            </div>
+            <div class="card-content">
+
+                <p>
+                <a style="font-size: 20px">Prof Skip Ellis Clarence</a>
+                </p>
+              <p>
+              Was the first African-American to receive a Ph.D. in Computer Science. Dr. Skip Ellis worked as a researcher and developer at Bell Telephone Laboratories, IBM and Xerox amongst others with special interests in groupware, coordination theory, object oriented systems, CSCW, office systems, databases, distributed systems, software engineering, world-wide-web (internetworking), systems design and modeling, workflow systems, and humane interfaces to computers.
+              </p><br>
+
+              <p>About</p>
+              <p>
+                  I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.
+              </p>
+
+            </div>
+
+            <div class="card-action">
+              <a href="#">Close</a>
+              <a href="#">Scan</a>
+            </div>
+
+          </div>
+        </div>
+
+        </div>
+                      </div>
+        </div>
+
+
     </body>
-  </html>
+
+</html>
