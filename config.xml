@@ -8,4 +8,5 @@
         Fredrick Abayie
     </author>
     <gap:plugin name="net.roughshod.plugins.barcodescanner" version="3.0.0" />
+    <icon src="img/ashesi_logo.jpg"/>
 </widget>
