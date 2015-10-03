@@ -95,10 +95,12 @@
 $(function () {
     "use strict";
     $("#scan_btn").click(function () {
+        alert("Scan button pressed");
         cordova.plugins.barcodeScanner.scan(
             function (result) {
                 $("#barcode_result").val(result.text);
-//                    "Format: " + result.format + "\n" +
+                $("#scan_ui").hide("fast");
+                $("#skip_barcode").show("fast");
             },
             function (error) {
                 alert("Scanning failed: " + error);
