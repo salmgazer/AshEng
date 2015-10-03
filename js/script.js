@@ -1,4 +1,4 @@
-var link = "controller/asheng.php?cmd=";
+var link = "http://cs.ashesi.edu.gh/class2016/salifu-mutaru/IWasHere/controller/asheng.php?cmd=";
 
 function sendRequest(u) {
     // Send request to server
@@ -19,12 +19,17 @@ $(function () {
 
 
 function signUp(){
+
+   if(!validate()){
+       return;
+   }
    var  email = $("#email").val();
    var thephone = $("#thephone").val();
    var fn = $("#fn").val();
    var occupation = $("#occupation").val();
    var workplace = $("#workplace").val();
    var nationality = $("#nationality").val();
+
 
     var phone = ""+thephone;
 
@@ -36,7 +41,7 @@ function signUp(){
         return;
     }
     //better alert
-    alert("added");
+    window.location.href = "home.html";
 }
 
 

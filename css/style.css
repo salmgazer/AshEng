@@ -25,7 +25,11 @@
   }
 
 .myheader{
-    position: relative;
+    position:fixed;
+    top:0px;
+    margin:0px auto;
+    z-index:100000;
+    width:100%;}
 }
 
 .mycolor{
@@ -33,7 +37,6 @@
 }
 
 .mynav{
-    height: 100px;
 }
 
 .mynav a{
@@ -41,4 +44,21 @@
     text-align: center;
     margin-bottom: auto;
     margin-top: auto;
+}
+
+.mainBody{
+    margin-top: 70px;
+}
+
+nav{
+    background-color: #b83838;
+}
+
+footer{
+    background-color: #b83838;
+}
+
+.mychip{
+    margin-bottom: 5px;
+    margin-right: 3px;
 }
